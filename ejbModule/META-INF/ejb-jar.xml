@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>reservationSv</display-name>
+	
+	<enterprise-beans>
+		<session>
+			<ejb-name>UserSv</ejb-name>
+			<home>com.haurylenka.projects.reservation.ejbBeans.interfaces.UserHome</home>
+			<remote>com.haurylenka.projects.reservation.ejbBeans.interfaces.UserRemote</remote>
+			<ejb-class>com.haurylenka.projects.reservation.ejbBeans.UserSv</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>ReservationCompSv</ejb-name>
+			<home>com.haurylenka.projects.reservation.ejbBeans.interfaces.ReservationCompHome</home>
+			<remote>com.haurylenka.projects.reservation.ejbBeans.interfaces.ReservationCompRemote</remote>
+			<ejb-class>com.haurylenka.projects.reservation.ejbBeans.ReservationCompSv</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>CustomerSv</ejb-name>
+			<home>com.haurylenka.projects.reservation.ejbBeans.interfaces.CustomerHome</home>
+			<remote>com.haurylenka.projects.reservation.ejbBeans.interfaces.CustomerRemote</remote>
+			<ejb-class>com.haurylenka.projects.reservation.ejbBeans.CustomerSv</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>FareFamilySv</ejb-name>
+			<home>com.haurylenka.projects.reservation.ejbBeans.interfaces.FareFamilyHome</home>
+			<remote>com.haurylenka.projects.reservation.ejbBeans.interfaces.FareFamilyRemote</remote>
+			<ejb-class>com.haurylenka.projects.reservation.ejbBeans.FareFamilySv</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>ReservationSv</ejb-name>
+			<home>com.haurylenka.projects.reservation.ejbBeans.interfaces.ReservationHome</home>
+			<remote>com.haurylenka.projects.reservation.ejbBeans.interfaces.ReservationRemote</remote>
+			<ejb-class>com.haurylenka.projects.reservation.ejbBeans.ReservationSv</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+	</enterprise-beans>
+</ejb-jar>
